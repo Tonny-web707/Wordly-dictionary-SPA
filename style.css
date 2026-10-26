@@ -1,0 +1,127 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #a4ff6f;
+  color: #243047;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #174ea6;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #a705cf;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+main {
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #00000010;
+}
+
+input {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#message {
+  color: #b42318;
+}
+
+.word-heading {
+  color: #174ea6;
+}
+
+.definition-card {
+  border-top: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.saved-word {
+  background-color: #e1f7e8;
+  border-left: 4px solid #16803c;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.audio-button {
+  margin: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #172b4d;
+  color: white;
+}
+
+
+body.dark {
+  background-color: #151923;
+  color: #edf2f7;
+}
+
+body.dark section {
+  background-color: #252b38;
+  color: #edf2f7;
+}
+
+body.dark .word-heading {
+  color: #91c4ff;
+}
+
+body.dark input {
+  background-color: #303747;
+  color: white;
+  border-color: #657087;
+}
+
+body.dark .saved-word {
+  background-color: #214532;
+}
+
+
+@media (max-width: 600px) {
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #searchForm button {
+    width: 100%;
+  }
+}

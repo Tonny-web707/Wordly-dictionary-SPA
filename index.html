@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wordly Dictionary</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Wordly Dictionary</h1>
+    <p>Discover the meaning of every word.</p>
+    <button id="themeButton" type="button">Switch Theme</button>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <h2>Find a Word</h2>
+
+      <form id="searchForm">
+        <input
+          type="text"
+          id="wordInput"
+          placeholder="Enter a word, e.g. beautiful"
+          required
+        >
+        <button type="submit">Search</button>
+      </form>
+
+      <p id="message" role="status"></p>
+    </section>
+
+    <section id="results" aria-live="polite">
+      <h2>Dictionary Results</h2>
+      <p>Search for a word to see its meaning.</p>
+    </section>
+
+    <section class="favorites-section">
+      <h2>My Favorite Words</h2>
+      <ul id="favoritesList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Wordly Dictionary | Learn a new word every day.</p>
+  </footer>
+</body>
+</html>
